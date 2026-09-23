@@ -1,6 +1,6 @@
 # Examen práctico - Sistema de pedidos del kiosco
-# Nombre y apellido:
-# Curso:
+# Nombre y apellido:Benjamín Lopez Fasanella
+# Curso: 2* 2*
 #
 # IMPORTANTE:
 # Resolver el programa siguiendo las etapas indicadas en el README.md.
@@ -13,9 +13,23 @@
 # =========================
 
 # Crear las variables necesarias.
+nombre_comprador="Jaimito"
+dinero_compras = 10000
+cant_total_productos = 0
+cant_aguas = 0
+cant_alfajores = 0
+cant_tostadas = 0
 # Crear las listas de productos y precios.
+l_productos = ["Agua", "Alfajor", "Tostada"]
+l_precios = [700, 900, 2200]
 # Pedir los datos del cliente.
-
+nombre_comprador = input("Ingrese su nombre completo: ")
+dinero_compras = input("Ingrese cuanto dinero tiene disponible: ")
+print("INTEFAZ KIOSCO:")
+print(f"Nombre del comprador:", nombre_comprador)
+print(f"Dinero disponible:", dinero_compras)
+print(f"Binvendo", nombre_comprador)
+print(f"Tiene", dinero_compras, "pesos para gastar")
 
 # =========================
 # ETAPA 2 - COMPRAS
