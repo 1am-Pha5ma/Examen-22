@@ -15,16 +15,16 @@
 # Crear las variables necesarias.
 nombre_comprador="Jaimito"
 dinero_compras = 10000
-cant_total_productos = 0
-cant_aguas = 0
-cant_alfajores = 0
-cant_tostadas = 0
+cant_total_productos = int(0)
+cant_aguas = int(0)
+cant_alfajores = int(0)
+cant_tostadas = int(0)
 # Crear las listas de productos y precios.
 l_productos = ["Agua", "Alfajor", "Tostada"]
 l_precios = [700, 900, 2200]
 # Pedir los datos del cliente.
 nombre_comprador = input("Ingrese su nombre completo: ")
-dinero_compras = input("Ingrese cuanto dinero tiene disponible: ")
+dinero_compras = int(input("Ingrese cuanto dinero tiene disponible: "))
 print("INTEFAZ KIOSCO:")
 print(f"Nombre del comprador:", nombre_comprador)
 print(f"Dinero disponible:", dinero_compras)
@@ -36,6 +36,12 @@ print(f"Tiene", dinero_compras, "pesos para gastar")
 # =========================
 
 # Mostrar el menú y procesar la opción seleccionada.
+print("productos disponibles:")
+for I in range(0, 3):
+    a=I
+    print(f"-",l_productos [a], ":", l_precios [I])
+producto_elegido = input()
+ 
 # Utilizar las listas para obtener producto y precio.
 
 
